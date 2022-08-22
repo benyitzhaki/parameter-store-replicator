@@ -16,7 +16,7 @@ $ npm install -g serverless
 After you have it installed, just deploy your function to the main region, specifying as target the replication region. For instance, to replicate from `us-east-1` to `us-west-2`:
 
 ```bash
-$ sls deploy --region us-east-1 --target-region eu-west-1
+$ sls deploy --region us-east-1 --param="target-region=eu-west-1"
 ```
 
 You can establish two way replication by deploying the same lambda to the target region:

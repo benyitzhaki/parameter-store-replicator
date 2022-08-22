@@ -13,7 +13,7 @@ provider:
         - "ssm:DeleteParameters"
       Resource: "*"
   environment:
-    AWS_TARGET_REGION: ${opt:target-region}
+    AWS_TARGET_REGION: ${param:target-region}
 
 functions:
   replicate:
